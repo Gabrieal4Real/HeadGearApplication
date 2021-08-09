@@ -1,5 +1,5 @@
 # The Headgear - A Mental Health Assessment and Aid Application
-- A Simple Mental Health Assessment and Aid Application made as the Final Year Project by Daniel Gabrieal Jayarajan in 2019
+A Simple Mental Health Assessment and Aid Application made as the Final Year Project by Daniel Gabrieal Jayarajan in 2019
 
 # Overview
 Mental Health has become an important part in a person’s life today. More and more people find it harder to enjoy life as they cannot find a balance between their life activities and find it increasingly difficult to solve their mental health issues as they are kept busy in their daily life. 
