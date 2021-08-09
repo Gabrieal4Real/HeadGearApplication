@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Home.Homepage">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="32dp"
+            android:gravity="center"
+            android:text="Homepage"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toTopOf="@id/header"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="305dp"
+            android:layout_height="19dp"
+            android:layout_marginBottom="13dp"
+            android:gravity="center"
+            android:text="HeadGear - Mental Health Assessment and Aid"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toTopOf="@+id/gifImageView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title" />
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/gifImageView"
+            android:layout_width="340dp"
+            android:layout_height="280dp"
+            android:src="@drawable/headgearlogo"
+            app:layout_constraintBottom_toTopOf="@+id/AssessmentText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/header" />
+
+        <TextView
+            android:id="@+id/AssessmentText"
+            android:layout_width="350dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="24dp"
+            android:text="Assess Your Mental Health"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toTopOf="@+id/Assessment"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.49"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gifImageView" />
+
+        <Button
+            android:id="@+id/Assessment"
+            android:layout_width="350dp"
+            android:layout_height="48dp"
+            android:background="@drawable/button"
+            android:text="Assessment"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toTopOf="@+id/aidtext"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.508"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/AssessmentText" />
+
+        <TextView
+            android:id="@+id/aidtext"
+            android:layout_width="350dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="24dp"
+            android:text="Help Yourself Become Better"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toTopOf="@+id/aid"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Assessment" />
+
+        <Button
+            android:id="@+id/aid"
+            android:layout_width="350dp"
+            android:layout_height="48dp"
+            android:background="@drawable/button"
+            android:text="Aid"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toTopOf="@+id/forumtext"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/aidtext" />
+
+        <TextView
+            android:id="@+id/forumtext"
+            android:layout_width="350dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="24dp"
+            android:text="Tell Your Story"
+            android:textColor="#FFFFFF"
+
+            app:layout_constraintBottom_toTopOf="@+id/forum"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/aid" />
+
+        <Button
+            android:id="@+id/forum"
+            android:layout_width="350dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="84dp"
+            android:background="@drawable/button"
+            android:text="Forum"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toTopOf="@+id/meowBottomNavigationhome"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/forumtext" />
+
+        <com.etebarian.meowbottomnavigation.MeowBottomNavigation
+            android:id="@+id/meowBottomNavigationhome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:mbn_backgroundBottomColor="#00131313"
+            app:mbn_circleColor="#ffffff"
+            app:mbn_countBackgroundColor="#ff6f00"
+            app:mbn_countTextColor="#ffffff"
+            app:mbn_defaultIconColor="#90a4ae"
+            app:mbn_rippleColor="#2f424242"
+            app:mbn_selectedIconColor="#3c415e"
+            app:mbn_shadowColor="#1f212121" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

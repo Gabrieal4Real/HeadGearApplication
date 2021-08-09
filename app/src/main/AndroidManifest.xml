@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.headgear">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Login.ProfilePage"></activity>
+        <activity
+            android:name=".Home.SplashScreenPage"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Aid.Stress.AidStressPage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Aid.Anxiety.AidAnxietyPage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Forum.ForumPostPage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Aid.Depression.AidDepressionPage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Aid.Aid.AidPage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Assessment.DASS21.AssessmentDASS21ReportPage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Assessment.DASS21.AssessmentDASS21Page"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Assessment.DASS42.AssessmentDASS42ReportPage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Assessment.DASS42.AssessmentDASS42Page"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Assessment.Assessment.AssessmentPage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Home.Homepage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Login.LoginPage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Login.RegistrationPage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Home.MainPage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Forum.ForumCommentPage"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

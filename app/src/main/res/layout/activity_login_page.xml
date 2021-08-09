@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Login.LoginPage">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="32dp"
+            android:gravity="center"
+            android:text="Log In"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toTopOf="@id/header"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="305dp"
+            android:layout_height="19dp"
+            android:layout_marginBottom="13dp"
+            android:gravity="center"
+            android:text="HeadGear - Mental Health Assessment and Aid"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toTopOf="@+id/gifImageView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title" />
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/gifImageView"
+            android:layout_width="340dp"
+            android:layout_height="280dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/headgearlogo"
+            app:layout_constraintBottom_toTopOf="@+id/usernameedit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/header" />
+
+        <EditText
+            android:id="@+id/usernameedit"
+            android:layout_width="230dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="40dp"
+            android:ems="10"
+            android:hint="Enter Username"
+            android:inputType="textPersonName"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#9E9A9A"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gifImageView" />
+
+        <EditText
+            android:id="@+id/passwordedit"
+            android:layout_width="230dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="Enter Password"
+            android:inputType="textPassword"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#9E9A9A"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/usernameedit" />
+
+        <Button
+            android:id="@+id/login3"
+            android:layout_width="350dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/button"
+            android:text="Login"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toTopOf="@+id/registertext"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/passwordedit" />
+
+        <TextView
+            android:id="@+id/registertext"
+            android:layout_width="350dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="24dp"
+            android:text="Not A Registered User?"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toTopOf="@+id/register3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/login3" />
+
+        <Button
+            android:id="@+id/register3"
+            android:layout_width="350dp"
+            android:layout_height="48dp"
+            android:background="@drawable/button"
+            android:text="Create New Account"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/registertext" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

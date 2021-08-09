@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Assessment.DASS21.AssessmentDASS21Page">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="32dp"
+            android:gravity="center"
+            android:text="DASS Assessment"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toTopOf="@id/header"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="305dp"
+            android:layout_height="19dp"
+            android:gravity="center"
+            android:text="HeadGear - Mental Health Assessment and Aid"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toTopOf="@+id/note"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title" />
+
+        <TextView
+            android:id="@+id/note"
+            android:layout_width="380dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="Note that this Assessment is only for Screening Purposes and is not a substitute for a Professional Diagnosis"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toTopOf="@+id/questiontext"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.528"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/header" />
+
+        <TextView
+            android:id="@+id/questiontext"
+            android:layout_width="306dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="55dp"
+            android:text="[QUESTION]"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/note" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="308dp"
+            android:layout_height="197dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/questiontext">
+
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="Did not apply to me at all"
+                android:textColor="#FFFFFF"
+                app:buttonTint="#FFFFFF" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="Applied to me to some degree, or some of the time"
+                android:textColor="#FFFFFF"
+                app:buttonTint="#FFFFFF" />
+
+            <RadioButton
+                android:id="@+id/radioButton3"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="Applied to me to a considerable degree, or a good part of time"
+                android:textColor="#FFFFFF"
+                app:buttonTint="#FFFFFF" />
+
+            <RadioButton
+                android:id="@+id/radioButton4"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="Applied to me very much, or most of the time"
+                android:textColor="#FFFFFF"
+                app:buttonTint="#FFFFFF" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/nextquestion"
+            android:layout_width="350dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/button"
+            android:text="Next Question"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="380dp"
+            android:layout_height="20dp"
+            android:progressTint="#fff"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/note" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
